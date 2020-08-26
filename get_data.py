@@ -22,7 +22,7 @@ def fetch_tags_from_web():
         for i in items:
             # print('Reading page %d, item number %d' %(page_number, items))
             url = 'https://api.stackexchange.com/2.2/questions?page=' + str(
-                page_number) + '&pagesize=100&order=desc&sort=activity&site=datascience&key=alcODF*i94yom4TuEuPhAA(('
+                page_number) + '&pagesize=100&order=desc&sort=activity&site=datascience&key=' # use your own key to make unlimited api calls
             response = requests.get(url=url)
             if response.ok:
                 json_data = response.json()
